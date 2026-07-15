@@ -11,10 +11,12 @@ const content = {
   email: "yusra.faheem@gwu.edu",
   location: "Washington, D.C.",
   resumeUrl: "", // add a link to a hosted PDF version of your resume here
+  githubUsername: "yusrafaheem",
 
   social: [
     { name: "GitHub", url: "https://github.com/yusrafaheem", icon: "github" },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/yusra-faheem-1b6370333/", icon: "linkedin" },
+    { name: "Medium", url: "https://medium.com/@yusra.faheem_19947", icon: "medium" },
     { name: "Email", url: "mailto:yusra.faheem@gwu.edu", icon: "email" },
   ],
 
@@ -110,7 +112,7 @@ const content = {
       description:
         "A distributed system combining fine-tuned vision transformers and LLMs to authenticate images, text, and metadata in real time under adversarial conditions — achieving robust detection across deepfakes, adversarial perturbations, and metadata spoofing. Includes a cross-modal consistency pipeline with automated benchmarking, now running as GW SEAS research infrastructure.",
       tags: ["Python", "PyTorch", "Hugging Face", "OpenCV", "FastAPI"],
-      link: "",
+      link: "https://github.com/yusrafaheem/multimodal-content-auth-engine",
       image: "",
     },
     {
@@ -118,8 +120,40 @@ const content = {
       description:
         "A model-agnostic ML auditing framework computing demographic parity, equalized odds, and predictive parity across hiring, lending, and content-moderation datasets, surfacing previously undetected bias in production-style models. Packaged as a pre-deployment quality gate consumable via CLI or REST API, with a React.js dashboard exposing severity scores and remediation paths.",
       tags: ["Python", "scikit-learn", "Fairlearn", "React.js", "Node.js"],
-      link: "",
+      link: "https://github.com/yusrafaheem/fairness-audit-framework",
       image: "",
+    },
+    {
+      title: "Flowbook — Limit Order Book Microstructure Lab",
+      description:
+        "A C++ matching engine with lock-free SPSC ingestion, an Avellaneda-Stoikov market maker backtested on a calibrated synthetic order-flow simulator, and from-scratch microstructure tooling for studying price formation and liquidity.",
+      tags: ["C++", "Python", "Market Microstructure", "Simulation"],
+      link: "https://github.com/yusrafaheem/flowbook",
+      image: "",
+    },
+    {
+      title: "Vectorgrad — Autodiff Engine From Scratch",
+      description:
+        "A reverse-mode automatic differentiation engine and neural network library built from scratch on vectorized NumPy, benchmarked against PyTorch for correctness and performance.",
+      tags: ["Python", "NumPy", "Autodiff", "Deep Learning"],
+      link: "https://github.com/yusrafaheem/vectorgrad",
+      image: "",
+    },
+  ],
+
+  // Featured writing — research, articles, and posts. Shown in the "Writing & Research" section.
+  writing: [
+    {
+      title: "Designing an Attention Mechanism That Keeps Untrusted Tokens Out of the Decision Path",
+      outlet: "Medium",
+      date: "July 2026",
+      excerpt:
+        "A deep dive into Provenance-Constrained Attention — an attention mechanism designed so that untrusted or adversarial tokens can be down-weighted before they ever reach the model's decision path.",
+      url: "https://medium.com/@yusra.faheem_19947/designing-an-attention-mechanism-that-keeps-untrusted-tokens-out-of-the-decision-path-ae9ad0ebadcc",
+      secondaryLink: {
+        label: "Also on LinkedIn",
+        url: "https://www.linkedin.com/in/yusra-faheem-1b6370333/overlay/1783395776862/single-media-viewer/?profileId=ACoAAFPhjBoBIMlIQF_PoyzwYsL7TON1Fmh3LuQ",
+      },
     },
   ],
 }
