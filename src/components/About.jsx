@@ -67,6 +67,48 @@ export default function About() {
             {content.initials}
           </div>
         </div>
+
+        {content.githubUsername && (
+          <div style={{ marginTop: 50 }}>
+            <h3
+              style={{
+                fontFamily: 'var(--font-mono)',
+                fontSize: 14,
+                color: 'var(--slate)',
+                fontWeight: 400,
+                marginBottom: 16,
+              }}
+            >
+              <span style={{ color: 'var(--green)' }}>▹</span> Recent GitHub activity
+            </h3>
+            <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
+              <a
+                href={`https://github.com/${content.githubUsername}`}
+                target="_blank"
+                rel="noreferrer"
+                style={{ flex: '1 1 320px', maxWidth: 480 }}
+              >
+                <img
+                  src={`https://github-readme-stats.vercel.app/api?username=${content.githubUsername}&show_icons=true&hide_title=true&theme=react&bg_color=112240&title_color=64ffda&text_color=8892b0&icon_color=64ffda&border_color=233554&border_radius=6`}
+                  alt="GitHub stats"
+                  style={{ width: '100%', display: 'block', borderRadius: 6 }}
+                />
+              </a>
+              <a
+                href={`https://github.com/${content.githubUsername}`}
+                target="_blank"
+                rel="noreferrer"
+                style={{ flex: '1 1 320px', maxWidth: 480 }}
+              >
+                <img
+                  src={`https://streak-stats.demolab.com/?user=${content.githubUsername}&theme=react&background=112240&stroke=233554&ring=64ffda&fire=64ffda&currStreakLabel=64ffda&sideNums=8892b0&sideLabels=8892b0&dates=8892b0&border=6`}
+                  alt="GitHub contribution streak"
+                  style={{ width: '100%', display: 'block', borderRadius: 6 }}
+                />
+              </a>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   )
