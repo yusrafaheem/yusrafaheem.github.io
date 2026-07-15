@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter, FaInstagram } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter, FaInstagram, FaMedium } from 'react-icons/fa'
 import content from '../data/content'
 
 const iconMap = {
@@ -7,6 +7,7 @@ const iconMap = {
   email: FaEnvelope,
   twitter: FaTwitter,
   instagram: FaInstagram,
+  medium: FaMedium,
 }
 
 function SideRail({ side, children }) {
