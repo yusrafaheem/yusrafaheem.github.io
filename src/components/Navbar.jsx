@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
+import { FaGithub } from 'react-icons/fa'
 import content from '../data/content'
 
 const links = [
   { label: 'About', href: '#about' },
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Writing', href: '#writing' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -54,7 +56,7 @@ export default function Navbar() {
         {content.initials}
       </a>
 
-      <nav style={{ marginLeft: 'auto', display: 'flex', gap: 30 }} className="d-none d-md-flex">
+      <nav style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 30 }} className="d-none d-md-flex">
         {links.map((link, i) => (
           <a
             key={link.href}
@@ -68,6 +70,15 @@ export default function Navbar() {
             <span style={{ color: 'var(--green)' }}>0{i + 1}.</span> {link.label}
           </a>
         ))}
+        <a
+          href="https://github.com/yusrafaheem"
+          target="_blank"
+          rel="noreferrer"
+          className="btn-outline-green"
+          style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}
+        >
+          <FaGithub size={14} /> GitHub
+        </a>
         {content.resumeUrl && (
           <a href={content.resumeUrl} target="_blank" rel="noreferrer" className="btn-outline-green">
             Resume
