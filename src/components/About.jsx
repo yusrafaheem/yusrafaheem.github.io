@@ -81,31 +81,34 @@ export default function About() {
             >
               <span style={{ color: 'var(--green)' }}>▹</span> Recent GitHub activity
             </h3>
-            <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
-              <a
-                href={`https://github.com/${content.githubUsername}`}
-                target="_blank"
-                rel="noreferrer"
-                style={{ flex: '1 1 320px', maxWidth: 480 }}
-              >
-                <img
-                  src={`https://github-readme-stats.vercel.app/api?username=${content.githubUsername}&show_icons=true&hide_title=true&theme=react&bg_color=112240&title_color=64ffda&text_color=8892b0&icon_color=64ffda&border_color=233554&border_radius=6`}
-                  alt="GitHub stats"
-                  style={{ width: '100%', display: 'block', borderRadius: 6 }}
-                />
-              </a>
-              <a
-                href={`https://github.com/${content.githubUsername}`}
-                target="_blank"
-                rel="noreferrer"
-                style={{ flex: '1 1 320px', maxWidth: 480 }}
-              >
-                <img
-                  src={`https://streak-stats.demolab.com/?user=${content.githubUsername}&theme=react&background=112240&stroke=233554&ring=64ffda&fire=64ffda&currStreakLabel=64ffda&sideNums=8892b0&sideLabels=8892b0&dates=8892b0&border=6`}
-                  alt="GitHub contribution streak"
-                  style={{ width: '100%', display: 'block', borderRadius: 6 }}
-                />
-              </a>
+            <a
+              href={`https://github.com/${content.githubUsername}`}
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: 'block',
+                background: 'var(--light-navy)',
+                border: '1px solid var(--lightest-navy)',
+                borderRadius: 6,
+                padding: '20px 24px',
+                overflowX: 'auto',
+              }}
+            >
+              <img
+                src={`https://ghchart.rshah.org/64ffda/${content.githubUsername}`}
+                alt="GitHub contribution chart"
+                style={{ display: 'block', minWidth: 700, width: '100%' }}
+              />
+            </a>
+            <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', marginTop: 16 }}>
+              <img
+                src={`https://img.shields.io/github/followers/${content.githubUsername}?label=Followers&style=for-the-badge&color=64ffda&labelColor=112240`}
+                alt="GitHub followers"
+              />
+              <img
+                src={`https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/${content.githubUsername}&label=Public%20Repos&query=%24.public_repos&style=for-the-badge&color=64ffda&labelColor=112240`}
+                alt="Public repos"
+              />
             </div>
           </div>
         )}
