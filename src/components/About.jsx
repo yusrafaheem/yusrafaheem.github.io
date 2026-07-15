@@ -105,10 +105,6 @@ export default function About() {
                 src={`https://img.shields.io/github/followers/${content.githubUsername}?label=Followers&style=for-the-badge&color=64ffda&labelColor=112240`}
                 alt="GitHub followers"
               />
-              <img
-                src={`https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/${content.githubUsername}&label=Public%20Repos&query=%24.public_repos&style=for-the-badge&color=64ffda&labelColor=112240`}
-                alt="Public repos"
-              />
             </div>
           </div>
         )}
