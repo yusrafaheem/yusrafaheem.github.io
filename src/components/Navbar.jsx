@@ -6,6 +6,8 @@ const links = [
   { label: 'About', href: '#about' },
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Coursework', href: '#coursework' },
+  { label: 'Hackathons', href: '#hackathons' },
   { label: 'Writing', href: '#writing' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -56,7 +58,7 @@ export default function Navbar() {
         {content.initials}
       </a>
 
-      <nav style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 30 }} className="d-none d-md-flex">
+      <nav style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 24 }} className="d-none d-md-flex">
         {links.map((link, i) => (
           <a
             key={link.href}
@@ -65,6 +67,7 @@ export default function Navbar() {
               color: 'var(--lightest-slate)',
               fontFamily: 'var(--font-mono)',
               fontSize: 13,
+              whiteSpace: 'nowrap',
             }}
           >
             <span style={{ color: 'var(--green)' }}>0{i + 1}.</span> {link.label}
