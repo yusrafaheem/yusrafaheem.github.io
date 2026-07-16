@@ -140,6 +140,14 @@ const content = {
       link: "https://github.com/yusrafaheem/vectorgrad",
       image: "",
     },
+    {
+      title: "Provenance-Constrained Attention — NumPy Proof of Concept",
+      description:
+        "Small-scale NumPy implementation of Provenance-Constrained Attention, the mechanism from Section 6 of my paper on keeping untrusted tokens out of a model's decision path. No autodiff library — forward and backward passes for all three conditions (vanilla, labeled, PCA) are hand-derived and checked against a central-difference gradient test. Includes an exhaustive adaptive-attack search and a multi-seed run reproducing the paper's results table.",
+      tags: ["Python", "NumPy", "Attention", "Adversarial ML", "Research"],
+      link: "https://github.com/yusrafaheem/pca-experiment",
+      image: "",
+    },
   ],
 
   // Featured writing — research, articles, and posts. Shown in the "Writing & Research" section.
