@@ -63,7 +63,7 @@ export default function Writing() {
   return (
     <section id="writing" className="container-custom" style={{ padding: '100px 0' }}>
       <div ref={ref} className={`reveal ${visible ? 'is-visible' : ''}`}>
-        <h2 className="numbered-heading" data-number="04.">
+        <h2 className="numbered-heading" data-number="06.">
           Writing &amp; Research
         </h2>
 
