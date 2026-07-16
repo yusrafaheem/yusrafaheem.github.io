@@ -28,9 +28,10 @@ const content = {
     ],
     skills: [
       "Python & Java",
-      "React.js & Node.js",
+      "Data Structures & Algorithms",
       "PyTorch & Hugging Face",
       "FastAPI",
+      "React.js & Node.js",
       "AWS & GCP",
       "Docker & Kubernetes",
       "SQL",
