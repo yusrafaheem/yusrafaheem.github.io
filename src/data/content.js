@@ -245,7 +245,7 @@ const content = {
       description:
         "I've been playing PUBG Mobile for seven years now, since I was 12. Livik and TDM rounds are my thing.",
       username: "YusraFaheem",
-      image: "",
+      image: "/images/pubg-screenshot.jpg",
     },
   },
 }
