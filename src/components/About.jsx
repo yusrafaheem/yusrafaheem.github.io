@@ -95,47 +95,6 @@ export default function About() {
             </div>
           </div>
         </div>
-
-        {content.githubUsername && (
-          <div style={{ marginTop: 50 }}>
-            <h3
-              style={{
-                fontFamily: 'var(--font-mono)',
-                fontSize: 14,
-                color: 'var(--slate)',
-                fontWeight: 400,
-                marginBottom: 16,
-              }}
-            >
-              <span style={{ color: 'var(--green)' }}>▹</span> Recent GitHub activity
-            </h3>
-            <a
-              href={`https://github.com/${content.githubUsername}`}
-              target="_blank"
-              rel="noreferrer"
-              style={{
-                display: 'block',
-                background: 'var(--light-navy)',
-                border: '1px solid var(--lightest-navy)',
-                borderRadius: 6,
-                padding: '20px 24px',
-                overflowX: 'auto',
-              }}
-            >
-              <img
-                src={`https://ghchart.rshah.org/64ffda/${content.githubUsername}`}
-                alt="GitHub contribution chart"
-                style={{ display: 'block', minWidth: 700, width: '100%' }}
-              />
-            </a>
-            <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', marginTop: 16 }}>
-              <img
-                src={`https://img.shields.io/github/followers/${content.githubUsername}?label=Followers&style=for-the-badge&color=64ffda&labelColor=112240`}
-                alt="GitHub followers"
-              />
-            </div>
-          </div>
-        )}
       </div>
     </section>
   )
