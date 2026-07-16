@@ -6,8 +6,11 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
+import AdditionalProjects from './components/AdditionalProjects'
+import Hackathons from './components/Hackathons'
 import Writing from './components/Writing'
 import Contact from './components/Contact'
+import Interests from './components/Interests'
 import Footer from './components/Footer'
 
 function App() {
@@ -21,8 +24,11 @@ function App() {
         <About />
         <Experience />
         <Projects />
+        <AdditionalProjects />
+        <Hackathons />
         <Writing />
         <Contact />
+        <Interests />
       </main>
       <Footer />
     </ThemeProvider>
