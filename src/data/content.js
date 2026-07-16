@@ -22,9 +22,9 @@ const content = {
 
   about: {
     paragraphs: [
-      "I'm a Computer Science undergraduate at George Washington University (Accounting minor), building systems at the intersection of technology, markets, and public decision-making — with a focus on using computational tools to improve transparency, trust, and efficiency in real-world systems.",
-      "I'm currently the founder of Veribuy, an AI-powered platform tackling information asymmetry in digital commerce by combining machine learning, price aggregation, and verified user data to cut through unreliable reviews and fragmented pricing.",
-      "My background spans ML research, production software engineering, and public-sector policy work (including a stint with a member of Congress) — giving me a dual lens on both building technical systems and understanding the impact they have once they're out in the world.",
+      "I'm a CS undergrad at George Washington University (accounting minor, mostly unrelated at this point). Most of what I actually do is backend engineering and machine learning — RAG pipelines, LLM fine-tuning, some adversarial ML on the side.",
+      "I also built and run Veribuy, a full-stack app (FastAPI, React, Postgres) that compares prices and flags fake reviews using a couple of basic NLP classifiers. Built and deployed the whole thing myself.",
+      "Outside of classes I've done ML research, a couple of SWE internships, and a semester doing data work for a congressional office. Different contexts, same basic loop: read the data, write the code, see if it works.",
     ],
     skills: [
       "Python & Java",
