@@ -58,6 +58,7 @@ const content = {
         "Founded and shipped Veribuy (veribuy.vercel.app), a live full-stack consumer platform (Python/FastAPI, React.js, PostgreSQL) for real-time price comparison and product discovery.",
         "Single-handedly owned architecture, backend infrastructure, frontend, and product strategy from concept to production deployment on AWS/Vercel.",
         "Engineered data pipelines to aggregate, validate, and rank pricing data across retailers at scale. Semifinalist, GW New Venture Competition.",
+        "I love the startup grind and I'm actively searching for a cofounder — planning to apply to YC with an LLM-powered beauty-tech startup, and already in talks to pitch top beauty companies like LVMH. Email me for details.",
       ],
     },
     {
@@ -158,6 +159,69 @@ const content = {
     },
   ],
 
+  // Smaller coursework and one-off builds — shown below the main project carousel.
+  additionalProjects: {
+    intro:
+      "Coursework and smaller builds that back everything above — data structures and algorithms implemented from scratch, benchmarked, and tested.",
+    items: [
+      {
+        title: "Hash Table vs. Binary Search Tree",
+        description:
+          "Built a hash table (separate chaining) and a binary search tree (lazy deletion) from scratch in Java, then profiled lookup cost for each against ~200 real university records to compare theoretical vs. actual performance.",
+        link: "https://github.com/yusrafaheem/csci1112-hashmap-treemap",
+      },
+      {
+        title: "Sorting Algorithm Profiler",
+        description:
+          "Implemented and benchmarked four sorting algorithms (selection, bubble, insertion, quicksort) from scratch, profiling runtime against a class-scheduling dataset to quantify the real gap between O(n²) and O(n log n).",
+        link: "https://github.com/yusrafaheem/csci1112-class-schedule-sorts",
+      },
+      {
+        title: "Bank Transaction Simulator",
+        description:
+          "Modeled a bank's transaction pipeline with a queue for FIFO processing and a stack-based postfix expression evaluator for realistic ordered transaction handling.",
+        link: "https://github.com/yusrafaheem/csci1112-bank-queue-stack",
+      },
+      {
+        title: "Music Catalog: ArrayList vs. LinkedList",
+        description:
+          "Built the same music catalog twice — on a dynamic array and a singly linked list — to directly compare insertion and lookup trade-offs between contiguous and pointer-based storage.",
+        link: "https://github.com/yusrafaheem/csci1112-music-catalog-lists",
+      },
+      {
+        title: "Cipher Word Extractor",
+        description:
+          "Wrote a substring-search engine to extract dictionary words embedded inside a cipher stream, applying string-matching algorithms to a decryption problem.",
+        link: "https://github.com/yusrafaheem/csci1112-embedded-cipher",
+      },
+      {
+        title: "Scramble Tile Game",
+        description:
+          "Built a Scrabble-style tile game engine handling scoring, hand management, and a best-word search over a full dictionary.",
+        link: "https://github.com/yusrafaheem/csci1112-scramble-tile-game",
+      },
+      {
+        title: "Enigma Machine Simulator",
+        description:
+          "Implemented a from-scratch Enigma machine — rotor stepping, plugboard wiring, message encryption/decryption — validated with a full JUnit test suite.",
+        link: "https://github.com/yusrafaheem/yusrafaheem-lab5",
+      },
+      {
+        title: "OOP Exam Tester",
+        description:
+          "Wrote a JUnit test suite exercising a small inheritance hierarchy to validate object behavior and polymorphism under edge cases.",
+        link: "https://github.com/yusrafaheem/exam-tester-this-year",
+      },
+    ],
+  },
+
+  // Hackathon track record — shown in its own section.
+  hackathons: {
+    stat: "3x Hackathon Winner",
+    blurb:
+      "I like the format: a small team, a hard deadline, and something working by the end. Always looking for the next one — if you need a teammate or want to team up, reach out. I'm down.",
+  },
+
   // Featured writing — research, articles, and posts. Shown in the "Writing & Research" section.
   writing: [
     {
@@ -173,6 +237,17 @@ const content = {
       },
     },
   ],
+
+  // Just-for-fun section, shown at the very bottom of the page.
+  interests: {
+    pubg: {
+      title: "Outside of Code",
+      description:
+        "I've been playing PUBG Mobile for seven years now, since I was 12. Livik and TDM rounds are my thing.",
+      username: "YusraFaheem",
+      image: "",
+    },
+  },
 }
 
 export default content
