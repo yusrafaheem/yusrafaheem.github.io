@@ -10,53 +10,75 @@ function ProjectCard({ project }) {
         background: 'var(--light-navy)',
         border: '1px solid var(--lightest-navy)',
         borderRadius: 6,
-        padding: 40,
         margin: '0 10px',
         minHeight: 280,
         display: 'flex',
         flexDirection: 'column',
+        overflow: 'hidden',
       }}
     >
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <FaFolder size={32} color="var(--green)" />
+      {project.image && (
+        <div
+          style={{
+            width: '100%',
+            height: 160,
+            background: '#fff',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <img
+            src={project.image}
+            alt={`${project.title} diagram`}
+            loading="lazy"
+            style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+          />
+        </div>
+      )}
+
+      <div style={{ padding: 40, display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <FaFolder size={32} color="var(--green)" />
+          {project.link && (
+            <a href={project.link} target="_blank" rel="noreferrer" style={{ color: 'var(--light-slate)' }} aria-label="View project">
+              <FaGithub size={20} />
+            </a>
+          )}
+        </div>
+
+        <h3 style={{ color: 'var(--lightest-slate)', marginTop: 20 }}>{project.title}</h3>
+        <p style={{ color: 'var(--slate)', flexGrow: 1 }}>{project.description}</p>
+
+        <ul
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '8px 16px',
+            padding: 0,
+            margin: '20px 0 0',
+            listStyle: 'none',
+            fontFamily: 'var(--font-mono)',
+            fontSize: 12,
+            color: 'var(--light-slate)',
+          }}
+        >
+          {project.tags.map((tag) => (
+            <li key={tag}>{tag}</li>
+          ))}
+        </ul>
+
         {project.link && (
-          <a href={project.link} target="_blank" rel="noreferrer" style={{ color: 'var(--light-slate)' }} aria-label="View project">
-            <FaGithub size={20} />
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noreferrer"
+            style={{ marginTop: 15, display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 13 }}
+          >
+            View project <FaExternalLinkAlt size={11} />
           </a>
         )}
       </div>
-
-      <h3 style={{ color: 'var(--lightest-slate)', marginTop: 20 }}>{project.title}</h3>
-      <p style={{ color: 'var(--slate)', flexGrow: 1 }}>{project.description}</p>
-
-      <ul
-        style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          gap: '8px 16px',
-          padding: 0,
-          margin: '20px 0 0',
-          listStyle: 'none',
-          fontFamily: 'var(--font-mono)',
-          fontSize: 12,
-          color: 'var(--light-slate)',
-        }}
-      >
-        {project.tags.map((tag) => (
-          <li key={tag}>{tag}</li>
-        ))}
-      </ul>
-
-      {project.link && (
-        <a
-          href={project.link}
-          target="_blank"
-          rel="noreferrer"
-          style={{ marginTop: 15, display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 13 }}
-        >
-          View project <FaExternalLinkAlt size={11} />
-        </a>
-      )}
     </div>
   )
 }
