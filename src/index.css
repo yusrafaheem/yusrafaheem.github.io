@@ -1,13 +1,14 @@
 :root {
-  --navy: #0a192f;
-  --light-navy: #112240;
-  --lightest-navy: #233554;
-  --navy-shadow: rgba(2, 12, 27, 0.7);
-  --slate: #8892b0;
-  --light-slate: #a8b2d1;
-  --lightest-slate: #ccd6f6;
-  --white: #e6f1ff;
-  --green: #64ffda;
+  --navy: #1a1130;
+  --light-navy: #241a3d;
+  --lightest-navy: #3a2b57;
+  --navy-shadow: rgba(20, 12, 35, 0.7);
+  --slate: #b3a6cc;
+  --light-slate: #cbb8ec;
+  --lightest-slate: #ede3fb;
+  --white: #f5f0ff;
+  --green: #8ef2b0;
+  --purple: #c9a7f0;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono: 'Fira Code', 'SF Mono', monospace;
 }
@@ -29,7 +30,7 @@ body {
 }
 
 ::selection {
-  background-color: var(--green);
+  background-color: var(--purple);
   color: var(--navy);
 }
 
@@ -45,7 +46,7 @@ a {
   background: var(--navy);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--lightest-navy);
+  background: var(--purple);
   border-radius: 10px;
 }
 
@@ -75,7 +76,7 @@ a {
 .numbered-heading::before {
   content: attr(data-number);
   font-family: var(--font-mono);
-  color: var(--green);
+  color: var(--purple);
   font-size: clamp(16px, 3vw, 20px);
   font-weight: 400;
   margin-right: 10px;
@@ -117,6 +118,6 @@ a {
   transition: background-color 0.25s ease;
 }
 .btn-outline-green:hover {
-  background-color: rgba(100, 255, 218, 0.1);
+  background-color: rgba(142, 242, 176, 0.12);
   color: var(--green);
 }
