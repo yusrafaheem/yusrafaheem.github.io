@@ -106,7 +106,7 @@ const content = {
         "A full-stack ML system combining NLP classification, anomaly detection, and graph-based trust scoring to detect fake reviews at scale, surfacing manipulation patterns invisible to keyword-based filters. Deployed as a real-time FastAPI service with an explainability layer (feature attribution, calibrated confidence scores), backed by an economic analysis of how review manipulation distorts pricing and harms consumers.",
       tags: ["Python", "PyTorch", "NLP", "Graph ML", "FastAPI", "React.js"],
       link: "https://veribuy.vercel.app/",
-      image: "",
+      image: "https://raw.githubusercontent.com/yusrafaheem/veribuy/main/docs/pitch-deck/03-solution.jpg",
     },
     {
       title: "Multimodal Synthetic Content Authentication Engine",
@@ -114,7 +114,7 @@ const content = {
         "A distributed system combining fine-tuned vision transformers and LLMs to authenticate images, text, and metadata in real time under adversarial conditions — achieving robust detection across deepfakes, adversarial perturbations, and metadata spoofing. Includes a cross-modal consistency pipeline with automated benchmarking, now running as GW SEAS research infrastructure.",
       tags: ["Python", "PyTorch", "Hugging Face", "OpenCV", "FastAPI"],
       link: "https://github.com/yusrafaheem/multimodal-content-auth-engine",
-      image: "",
+      image: "https://mermaid.ink/img/Zmxvd2NoYXJ0IExSCiAgICBzdWJncmFwaCBJbnB1dAogICAgICAgIElNR1tJbWFnZSBieXRlc10KICAgICAgICBDQVBbQ2FwdGlvbiAvIGNsYWltIHRleHRdCiAgICBlbmQKCiAgICBJTUcgLS0-IElEW0ltYWdlIERldGVjdG9yPGJyLz5WaVQgYmFja2JvbmUgKyBoZWFkPGJyLz5vciBFTEEgKyBub2lzZS1yZXNpZHVhbF0KICAgIElNRyAtLT4gTURbTWV0YWRhdGEgRGV0ZWN0b3I8YnIvPkVYSUYgcnVsZSBlbmdpbmVdCiAgICBDQVAgLS0-IFREW1RleHQgRGV0ZWN0b3I8YnIvPkNMSVAgaW1hZ2UtdGV4dCBzaW1pbGFyaXR5PGJyLz5vciB0ZXh0LXN0YXRzIGhldXJpc3RpY10KICAgIElNRyAtLT4gVEQKCiAgICBJRCAtLT4gRlVTW0Nyb3NzLU1vZGFsPGJyLz5Db25zaXN0ZW5jeSBQaXBlbGluZV0KICAgIE1EIC0tPiBGVVMKICAgIFREIC0tPiBGVVMKCiAgICBGVVMgLS0-IE9VVFtVbmlmaWVkIFZlcmRpY3Q8YnIvPmF1dGhlbnRpYyAvIHN1c3BpY2lvdXMgLyBsaWtlbHlfZmFrZTxici8-KyBwZXItbW9kYWxpdHkgZXhwbGFuYXRpb25dCg==",
     },
     {
       title: "Algorithmic Fairness Auditing Framework",
@@ -122,7 +122,7 @@ const content = {
         "A model-agnostic ML auditing framework computing demographic parity, equalized odds, and predictive parity across hiring, lending, and content-moderation datasets, surfacing previously undetected bias in production-style models. Packaged as a pre-deployment quality gate consumable via CLI or REST API, with a React.js dashboard exposing severity scores and remediation paths.",
       tags: ["Python", "scikit-learn", "Fairlearn", "React.js", "Node.js"],
       link: "https://github.com/yusrafaheem/fairness-audit-framework",
-      image: "",
+      image: "https://raw.githubusercontent.com/yusrafaheem/fairness-audit-framework/main/docs/architecture.svg",
     },
     {
       title: "Flowbook — Limit Order Book Microstructure Lab",
@@ -130,7 +130,7 @@ const content = {
         "A C++ matching engine with lock-free SPSC ingestion, an Avellaneda-Stoikov market maker backtested on a calibrated synthetic order-flow simulator, and from-scratch microstructure tooling for studying price formation and liquidity.",
       tags: ["C++", "Python", "Market Microstructure", "Simulation"],
       link: "https://github.com/yusrafaheem/flowbook",
-      image: "",
+      image: "https://mermaid.ink/img/Zmxvd2NoYXJ0IFRCCiAgICBzdWJncmFwaCBDUFBbImNwcC8gKEMrKzE3LCBweWJpbmQxMSkiXQogICAgICAgIE1FWyJNYXRjaGluZ0VuZ2luZTxici8-cHJpY2UtdGltZSBwcmlvcml0eTxici8-bGF6eSB0b21ic3RvbmUgY2FuY2VsbGF0aW9uPGJyLz5taWQgLyBtaWNyb3ByaWNlIC8gZGVwdGggc25hcHNob3QiXQogICAgICAgIFJCWyJTcHNjUmluZ0J1ZmZlcig0MDk2KTxici8-d2FpdC1mcmVlLCBhdG9taWMgaGVhZC90YWlsIl0KICAgIGVuZAogICAgc3ViZ3JhcGggUFlbInB5dGhvbi9mbG93Ym9vay8iXQogICAgICAgIFNJTVsic2ltdWxhdG9yLnB5PGJyLz5zeW50aGV0aWMgb3JkZXIgZmxvdyJdCiAgICAgICAgRkVBVFsiZmVhdHVyZXMucHk8YnIvPk9CSSAvIG1pY3JvcHJpY2UgLyBzcHJlYWQiXQogICAgICAgIFNUUkFUWyJzdHJhdGVnaWVzLnB5PGJyLz5BdmVsbGFuZWRhLVN0b2lrb3YgKyBiYXNlbGluZSJdCiAgICAgICAgQlRbImJhY2t0ZXN0LnB5PGJyLz5QbkwgLyBTaGFycGUgLyBkcmF3ZG93biJdCiAgICAgICAgUkVTWyJyZXNlYXJjaC5weTxici8-ZnJvbS1zY3JhdGNoIGF0dGVudGlvbiBtb2RlbCJdCiAgICBlbmQKICAgIENQUCAtLT58cHliaW5kMTEgZmxvd2Jvb2suX2NvcmV8IFBZCg==",
     },
     {
       title: "Vectorgrad — Autodiff Engine From Scratch",
