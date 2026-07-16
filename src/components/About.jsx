@@ -47,24 +47,52 @@ export default function About() {
 
           <div
             style={{
-              flex: '1 1 220px',
-              minWidth: 200,
-              maxWidth: 260,
-              aspectRatio: '1 / 1',
-              borderRadius: 4,
-              border: '2px solid var(--green)',
-              background:
-                'linear-gradient(rgba(100,255,218,0.1), rgba(100,255,218,0.1)), var(--light-navy)',
+              flex: '1 1 300px',
+              maxWidth: 360,
               margin: '0 auto',
               display: 'flex',
-              alignItems: 'center',
+              gap: 16,
               justifyContent: 'center',
-              fontFamily: 'var(--font-mono)',
-              fontSize: 48,
-              color: 'var(--green)',
             }}
           >
-            {content.initials}
+            <div
+              style={{
+                flex: '1 1 0',
+                minWidth: 110,
+                maxWidth: 160,
+                aspectRatio: '1 / 1',
+                borderRadius: 4,
+                border: '2px solid var(--green)',
+                background:
+                  'linear-gradient(rgba(100,255,218,0.1), rgba(100,255,218,0.1)), var(--light-navy)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontFamily: 'var(--font-mono)',
+                fontSize: 40,
+                color: 'var(--green)',
+              }}
+            >
+              {content.initials}
+            </div>
+
+            <div
+              style={{
+                flex: '1 1 0',
+                minWidth: 110,
+                maxWidth: 160,
+                aspectRatio: '1 / 1',
+                borderRadius: 4,
+                border: '2px solid var(--green)',
+                overflow: 'hidden',
+              }}
+            >
+              <img
+                src="/images/yusra-photo-square.jpg"
+                alt="Yusra Faheem"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
+            </div>
           </div>
         </div>
 
