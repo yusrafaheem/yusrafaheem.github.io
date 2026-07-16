@@ -11,7 +11,7 @@ export default function Contact() {
       style={{ padding: '100px 0', textAlign: 'center', maxWidth: 600 }}
     >
       <div ref={ref} className={`reveal ${visible ? 'is-visible' : ''}`}>
-        <p style={{ color: 'var(--green)', fontFamily: 'var(--font-mono)', fontSize: 16 }}>05. What's Next?</p>
+        <p style={{ color: 'var(--green)', fontFamily: 'var(--font-mono)', fontSize: 16 }}>07. What's Next?</p>
         <h2 style={{ fontSize: 'clamp(30px, 5vw, 48px)', color: 'var(--lightest-slate)', margin: '0 0 20px' }}>
           Get In Touch
         </h2>
