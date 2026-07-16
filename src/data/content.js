@@ -6,8 +6,8 @@
 const content = {
   name: "Yusra Faheem",
   initials: "YF",
-  role: "Software Developer & Founder, Veribuy",
-  tagline: "I build systems that make markets more transparent.",
+  role: "Software Engineer",
+  tagline: "I write code, mostly backend and machine learning.",
   email: "yusra.faheem@gwu.edu",
   location: "Washington, D.C.",
   resumeUrl: "", // add a link to a hosted PDF version of your resume here
