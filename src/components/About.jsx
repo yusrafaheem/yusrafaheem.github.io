@@ -11,7 +11,7 @@ export default function About() {
           About Me
         </h2>
 
-        <div style={{ display: 'flex', gap: 50, flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: 50, flexWrap: 'wrap', alignItems: 'flex-start' }}>
           <div style={{ flex: '2 1 400px', color: 'var(--slate)', fontSize: 17 }}>
             {content.about.paragraphs.map((p, i) => (
               <p key={i}>{p}</p>
