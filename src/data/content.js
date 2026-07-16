@@ -148,6 +148,14 @@ const content = {
       link: "https://github.com/yusrafaheem/pca-experiment",
       image: "",
     },
+    {
+      title: "Data Structures & Algorithms Coursework",
+      description:
+        "A set of small Java projects from GW's data structures course, plus one side project: a hash table (separate chaining) and a binary search tree (lazy deletion) profiled against each other on ~200 records, a queue/stack-based bank transaction simulator, sorting-algorithm profiling (selection, bubble, insertion, quicksort) on datasets up to 10k rows, an ArrayList-vs-LinkedList music catalog, a substring-search cipher decoder, and a from-scratch Enigma machine with a JUnit test suite. Outside of coursework: a DC Metro network simulator modeling transfer stations as a linked structure with a recursive shortest-path search.",
+      tags: ["Java", "Data Structures", "Algorithms", "Sorting", "JUnit"],
+      link: "https://github.com/yusrafaheem/dc-metro-simulator",
+      image: "",
+    },
   ],
 
   // Featured writing — research, articles, and posts. Shown in the "Writing & Research" section.
