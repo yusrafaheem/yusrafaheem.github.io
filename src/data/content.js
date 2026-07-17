@@ -11,10 +11,12 @@ const content = {
   email: "yusra.faheem@gwu.edu",
   location: "Washington, D.C.",
   resumeUrl: "", // add a link to a hosted PDF version of your resume here
+  githubUsername: "yusrafaheem",
 
   social: [
     { name: "GitHub", url: "https://github.com/yusrafaheem", icon: "github" },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/yusra-faheem-1b6370333/", icon: "linkedin" },
+    { name: "Medium", url: "https://medium.com/@yusra.faheem_19947", icon: "medium" },
     { name: "Email", url: "mailto:yusra.faheem@gwu.edu", icon: "email" },
   ],
 
@@ -26,6 +28,7 @@ const content = {
     ],
     skills: [
       "Python & Java",
+      "Data Structures & Algorithms",
       "React.js & Node.js",
       "PyTorch & Hugging Face",
       "FastAPI",
@@ -55,6 +58,7 @@ const content = {
         "Founded and shipped Veribuy (veribuy.vercel.app), a live full-stack consumer platform (Python/FastAPI, React.js, PostgreSQL) for real-time price comparison and product discovery.",
         "Single-handedly owned architecture, backend infrastructure, frontend, and product strategy from concept to production deployment on AWS/Vercel.",
         "Engineered data pipelines to aggregate, validate, and rank pricing data across retailers at scale. Semifinalist, GW New Venture Competition.",
+        "I love the startup grind and I'm actively searching for a cofounder — planning to apply to YC with an LLM-powered beauty-tech startup, and already in talks to pitch top beauty companies like LVMH. Email me for details.",
       ],
     },
     {
@@ -103,22 +107,54 @@ const content = {
         "A full-stack ML system combining NLP classification, anomaly detection, and graph-based trust scoring to detect fake reviews at scale, surfacing manipulation patterns invisible to keyword-based filters. Deployed as a real-time FastAPI service with an explainability layer (feature attribution, calibrated confidence scores), backed by an economic analysis of how review manipulation distorts pricing and harms consumers.",
       tags: ["Python", "PyTorch", "NLP", "Graph ML", "FastAPI", "React.js"],
       link: "https://veribuy.vercel.app/",
-      image: "",
+      image: "https://raw.githubusercontent.com/yusrafaheem/veribuy/main/docs/pitch-deck/03-solution.jpg",
     },
     {
       title: "Multimodal Synthetic Content Authentication Engine",
       description:
         "A distributed system combining fine-tuned vision transformers and LLMs to authenticate images, text, and metadata in real time under adversarial conditions — achieving robust detection across deepfakes, adversarial perturbations, and metadata spoofing. Includes a cross-modal consistency pipeline with automated benchmarking, now running as GW SEAS research infrastructure.",
       tags: ["Python", "PyTorch", "Hugging Face", "OpenCV", "FastAPI"],
-      link: "",
-      image: "",
+      link: "https://github.com/yusrafaheem/multimodal-content-auth-engine",
+      image: "https://mermaid.ink/img/Zmxvd2NoYXJ0IExSCiAgICBzdWJncmFwaCBJbnB1dAogICAgICAgIElNR1tJbWFnZSBieXRlc10KICAgICAgICBDQVBbQ2FwdGlvbiAvIGNsYWltIHRleHRdCiAgICBlbmQKCiAgICBJTUcgLS0-IElEW0ltYWdlIERldGVjdG9yPGJyLz5WaVQgYmFja2JvbmUgKyBoZWFkPGJyLz5vciBFTEEgKyBub2lzZS1yZXNpZHVhbF0KICAgIElNRyAtLT4gTURbTWV0YWRhdGEgRGV0ZWN0b3I8YnIvPkVYSUYgcnVsZSBlbmdpbmVdCiAgICBDQVAgLS0-IFREW1RleHQgRGV0ZWN0b3I8YnIvPkNMSVAgaW1hZ2UtdGV4dCBzaW1pbGFyaXR5PGJyLz5vciB0ZXh0LXN0YXRzIGhldXJpc3RpY10KICAgIElNRyAtLT4gVEQKCiAgICBJRCAtLT4gRlVTW0Nyb3NzLU1vZGFsPGJyLz5Db25zaXN0ZW5jeSBQaXBlbGluZV0KICAgIE1EIC0tPiBGVVMKICAgIFREIC0tPiBGVVMKCiAgICBGVVMgLS0-IE9VVFtVbmlmaWVkIFZlcmRpY3Q8YnIvPmF1dGhlbnRpYyAvIHN1c3BpY2lvdXMgLyBsaWtlbHlfZmFrZTxici8-KyBwZXItbW9kYWxpdHkgZXhwbGFuYXRpb25dCg==",
     },
     {
       title: "Algorithmic Fairness Auditing Framework",
       description:
         "A model-agnostic ML auditing framework computing demographic parity, equalized odds, and predictive parity across hiring, lending, and content-moderation datasets, surfacing previously undetected bias in production-style models. Packaged as a pre-deployment quality gate consumable via CLI or REST API, with a React.js dashboard exposing severity scores and remediation paths.",
       tags: ["Python", "scikit-learn", "Fairlearn", "React.js", "Node.js"],
-      link: "",
+      link: "https://github.com/yusrafaheem/fairness-audit-framework",
+      image: "https://raw.githubusercontent.com/yusrafaheem/fairness-audit-framework/main/docs/architecture.svg",
+    },
+    {
+      title: "Flowbook — Limit Order Book Microstructure Lab",
+      description:
+        "A C++ matching engine with lock-free SPSC ingestion, an Avellaneda-Stoikov market maker backtested on a calibrated synthetic order-flow simulator, and from-scratch microstructure tooling for studying price formation and liquidity.",
+      tags: ["C++", "Python", "Market Microstructure", "Simulation"],
+      link: "https://github.com/yusrafaheem/flowbook",
+      image: "https://mermaid.ink/img/Zmxvd2NoYXJ0IExSCiAgICBzdWJncmFwaCBDUFBbImNwcC8gKEMrKzE3LCBweWJpbmQxMSkiXQogICAgICAgIE1FWyJNYXRjaGluZ0VuZ2luZTxici8-cHJpY2UtdGltZSBwcmlvcml0eTxici8-bGF6eSB0b21ic3RvbmUgY2FuY2VsbGF0aW9uIl0KICAgICAgICBSQlsiU3BzY1JpbmdCdWZmZXIoNDA5Nik8YnIvPndhaXQtZnJlZSwgYXRvbWljIGhlYWQvdGFpbCJdCiAgICBlbmQKICAgIHN1YmdyYXBoIFBZWyJweXRob24vZmxvd2Jvb2svIl0KICAgICAgICBTSU1bInNpbXVsYXRvci5weSJdCiAgICAgICAgU1RSQVRbInN0cmF0ZWdpZXMucHk8YnIvPkF2ZWxsYW5lZGEtU3RvaWtvdiJdCiAgICAgICAgQlRbImJhY2t0ZXN0LnB5PGJyLz5QbkwgLyBTaGFycGUiXQogICAgICAgIFJFU1sicmVzZWFyY2gucHk8YnIvPmF0dGVudGlvbiBtb2RlbCJdCiAgICBlbmQKICAgIENQUCAtLT58cHliaW5kMTF8IFBZCiAgICBTSU0gLS0-IFNUUkFUIC0tPiBCVAogICAgU0lNIC0tPiBSRVMK",
+    },
+    {
+      title: "Vectorgrad — Autodiff Engine From Scratch",
+      description:
+        "A reverse-mode automatic differentiation engine and neural network library built from scratch on vectorized NumPy, benchmarked against PyTorch for correctness and performance.",
+      tags: ["Python", "NumPy", "Autodiff", "Deep Learning"],
+      link: "https://github.com/yusrafaheem/vectorgrad",
+      image: "",
+    },
+    {
+      title: "Provenance-Constrained Attention — NumPy Proof of Concept",
+      description:
+        "Small-scale NumPy implementation of Provenance-Constrained Attention, the mechanism from Section 6 of my paper on keeping untrusted tokens out of a model's decision path. No autodiff library — forward and backward passes for all three conditions (vanilla, labeled, PCA) are hand-derived and checked against a central-difference gradient test. Includes an exhaustive adaptive-attack search and a multi-seed run reproducing the paper's results table.",
+      tags: ["Python", "NumPy", "Attention", "Adversarial ML", "Research"],
+      link: "https://github.com/yusrafaheem/pca-experiment",
+      image: "",
+    },
+    {
+      title: "Data Structures & Algorithms Coursework",
+      description:
+        "A set of small Java projects from GW's data structures course, plus one side project: a hash table (separate chaining) and a binary search tree (lazy deletion) profiled against each other on ~200 records, a queue/stack-based bank transaction simulator, sorting-algorithm profiling (selection, bubble, insertion, quicksort) on datasets up to 10k rows, an ArrayList-vs-LinkedList music catalog, a substring-search cipher decoder, and a from-scratch Enigma machine with a JUnit test suite. Outside of coursework: a DC Metro network simulator modeling transfer stations as a linked structure with a recursive shortest-path search.",
+      tags: ["Java", "Data Structures", "Algorithms", "Sorting", "JUnit"],
+      link: "https://github.com/yusrafaheem/dc-metro-simulator",
       image: "",
     },
     {
@@ -129,7 +165,105 @@ const content = {
       link: "https://github.com/yusrafaheem/scalable-url-shortener",
       image: "",
     },
+    {
+      title: "Distributed Object Storage System",
+      description:
+        "A distributed, content-addressable object store built around the same patterns production storage systems use under the hood: SHA-256 chunk deduplication, a consistent-hash ring for chunk placement, Dynamo-style quorum replication (N=3, W=2) with integrity-checked read failover, and reference-counted garbage collection to safely reclaim deduplicated chunks. Verified with real benchmarks — reads and writes hold up after killing a storage node mid-cluster, and two files sharing a common asset show a measured 39% reduction in bytes stored.",
+      tags: ["Node.js", "Fastify", "Distributed Systems", "Docker", "Prometheus"],
+      link: "https://github.com/yusrafaheem/distributed-object-store",
+      image: "",
+    },
   ],
+
+  // Smaller coursework and one-off builds — shown below the main project carousel.
+  additionalProjects: {
+    intro:
+      "Coursework and smaller builds that back everything above — data structures and algorithms implemented from scratch, benchmarked, and tested.",
+    items: [
+      {
+        title: "Hash Table vs. Binary Search Tree",
+        description:
+          "Built a hash table (separate chaining) and a binary search tree (lazy deletion) from scratch in Java, then profiled lookup cost for each against ~200 real university records to compare theoretical vs. actual performance.",
+        link: "https://github.com/yusrafaheem/csci1112-hashmap-treemap",
+      },
+      {
+        title: "Sorting Algorithm Profiler",
+        description:
+          "Implemented and benchmarked four sorting algorithms (selection, bubble, insertion, quicksort) from scratch, profiling runtime against a class-scheduling dataset to quantify the real gap between O(n²) and O(n log n).",
+        link: "https://github.com/yusrafaheem/csci1112-class-schedule-sorts",
+      },
+      {
+        title: "Bank Transaction Simulator",
+        description:
+          "Modeled a bank's transaction pipeline with a queue for FIFO processing and a stack-based postfix expression evaluator for realistic ordered transaction handling.",
+        link: "https://github.com/yusrafaheem/csci1112-bank-queue-stack",
+      },
+      {
+        title: "Music Catalog: ArrayList vs. LinkedList",
+        description:
+          "Built the same music catalog twice — on a dynamic array and a singly linked list — to directly compare insertion and lookup trade-offs between contiguous and pointer-based storage.",
+        link: "https://github.com/yusrafaheem/csci1112-music-catalog-lists",
+      },
+      {
+        title: "Cipher Word Extractor",
+        description:
+          "Wrote a substring-search engine to extract dictionary words embedded inside a cipher stream, applying string-matching algorithms to a decryption problem.",
+        link: "https://github.com/yusrafaheem/csci1112-embedded-cipher",
+      },
+      {
+        title: "Scramble Tile Game",
+        description:
+          "Built a Scrabble-style tile game engine handling scoring, hand management, and a best-word search over a full dictionary.",
+        link: "https://github.com/yusrafaheem/csci1112-scramble-tile-game",
+      },
+      {
+        title: "Enigma Machine Simulator",
+        description:
+          "Implemented a from-scratch Enigma machine — rotor stepping, plugboard wiring, message encryption/decryption — validated with a full JUnit test suite.",
+        link: "https://github.com/yusrafaheem/yusrafaheem-lab5",
+      },
+      {
+        title: "OOP Exam Tester",
+        description:
+          "Wrote a JUnit test suite exercising a small inheritance hierarchy to validate object behavior and polymorphism under edge cases.",
+        link: "https://github.com/yusrafaheem/exam-tester-this-year",
+      },
+    ],
+  },
+
+  // Hackathon track record — shown in its own section.
+  hackathons: {
+    stat: "3x Hackathon Winner",
+    blurb:
+      "I like the format: a small team, a hard deadline, and something working by the end. Always looking for the next one — if you need a teammate or want to team up, reach out. I'm down.",
+  },
+
+  // Featured writing — research, articles, and posts. Shown in the "Writing & Research" section.
+  writing: [
+    {
+      title: "Designing an Attention Mechanism That Keeps Untrusted Tokens Out of the Decision Path",
+      outlet: "Medium",
+      date: "July 2026",
+      excerpt:
+        "A deep dive into Provenance-Constrained Attention — an attention mechanism designed so that untrusted or adversarial tokens can be down-weighted before they ever reach the model's decision path.",
+      url: "https://medium.com/@yusra.faheem_19947/designing-an-attention-mechanism-that-keeps-untrusted-tokens-out-of-the-decision-path-ae9ad0ebadcc",
+      secondaryLink: {
+        label: "Also on LinkedIn",
+        url: "https://www.linkedin.com/in/yusra-faheem-1b6370333/overlay/1783395776862/single-media-viewer/?profileId=ACoAAFPhjBoBIMlIQF_PoyzwYsL7TON1Fmh3LuQ",
+      },
+    },
+  ],
+
+  // Just-for-fun section, shown at the very bottom of the page.
+  interests: {
+    pubg: {
+      title: "Outside of Code",
+      description:
+        "I've been playing PUBG Mobile for seven years now, since I was 12. Livik and TDM rounds are my thing.",
+      username: "YusraFaheem",
+      image: "/images/pubg-screenshot.jpg",
+    },
+  },
 }
 
 export default content
